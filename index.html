@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص الدرس الرابع - الألوان والأرقام - الصف السادس - 1447هـ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .english-text {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* العلامة المائية المتحركة */
+        .watermark {
+            position: fixed;
+            font-size: 16px;
+            color: rgba(236, 72, 153, 0.4);
+            pointer-events: none;
+            z-index: 1000;
+            font-weight: bold;
+            animation: moveWatermark 25s linear infinite;
+            white-space: nowrap;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        
+        @keyframes moveWatermark {
+            0% { 
+                top: 8%; 
+                left: 3%; 
+                transform: rotate(0deg);
+            }
+            25% { 
+                top: 8%; 
+                right: 3%; 
+                left: auto;
+                transform: rotate(90deg);
+            }
+            50% { 
+                bottom: 8%; 
+                right: 3%; 
+                top: auto;
+                transform: rotate(180deg);
+            }
+            75% { 
+                bottom: 8%; 
+                left: 3%; 
+                right: auto;
+                transform: rotate(270deg);
+            }
+            100% { 
+                top: 8%; 
+                left: 3%; 
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* خلفية متدرجة وردية أنثوية */
+        .gradient-bg {
+            background: linear-gradient(135deg, 
+                #fdf2f8 0%, 
+                #fce7f3 10%, 
+                #fbcfe8 20%, 
+                #f9a8d4 30%, 
+                #f472b6 40%, 
+                #ec4899 50%, 
+                #db2777 60%, 
+                #be185d 70%, 
+                #9d174d 80%, 
+                #831843 90%, 
+                #701a75 100%);
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        /* مؤثرات بصرية عائمة أنثوية */
+        .floating-elements {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-heart {
+            position: absolute;
+            color: rgba(236, 72, 153, 0.3);
+            font-size: 24px;
+            animation: floatHeart 20s ease-in-out infinite;
+        }
+        
+        @keyframes floatHeart {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg) scale(1); 
+                opacity: 0.3; 
+            }
+            25% { 
+                transform: translateY(-80px) rotate(90deg) scale(1.5); 
+                opacity: 0.7; 
+            }
+            50% { 
+                transform: translateY(-60px) rotate(180deg) scale(1.2); 
+                opacity: 1; 
+            }
+            75% { 
+                transform: translateY(-70px) rotate(270deg) scale(1.4); 
+                opacity: 0.6; 
+            }
+        }
+        
+        .floating-flower {
+            position: absolute;
+            font-size: 28px;
+            animation: floatFlower 18s ease-in-out infinite;
+            opacity: 0.4;
+        }
+        
+        @keyframes floatFlower {
+            0%, 100% { 
+                transform: translateY(0px) scale(1) rotate(0deg); 
+            }
+            50% { 
+                transform: translateY(-100px) scale(1.6) rotate(180deg); 
+            }
+        }
+        
+        .floating-butterfly {
+            position: absolute;
+            font-size: 32px;
+            animation: floatButterfly 15s ease-in-out infinite;
+            opacity: 0.5;
+        }
+        
+        @keyframes floatButterfly {
+            0%, 100% { 
+                transform: translateX(0px) translateY(0px) rotate(0deg); 
+            }
+            25% { 
+                transform: translateX(50px) translateY(-30px) rotate(10deg); 
+            }
+            50% { 
+                transform: translateX(0px) translateY(-60px) rotate(-10deg); 
+            }
+            75% { 
+                transform: translateX(-50px) translateY(-30px) rotate(5deg); 
+            }
+        }
+        
+        .floating-star {
+            position: absolute;
+            color: #f9a8d4;
+            font-size: 20px;
+            animation: floatStar 12s ease-in-out infinite;
+        }
+        
+        @keyframes floatStar {
+            0%, 100% { 
+                opacity: 0.3; 
+                transform: scale(1) rotate(0deg); 
+            }
+            50% { 
+                opacity: 1; 
+                transform: scale(2) rotate(180deg); 
+            }
+        }
+        
+        /* تصميم البطاقات الأنثوية */
+        .summary-card {
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.95), 
+                rgba(253, 242, 248, 0.9), 
+                rgba(252, 231, 243, 0.85));
+            border: 3px solid #f9a8d4;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .summary-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(236, 72, 153, 0.25);
+            border-color: #ec4899;
+        }
+        
+        .summary-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, 
+                #ec4899, #f472b6, #f9a8d4, #fbcfe8, #fce7f3, #fdf2f8);
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .summary-card::after {
+            content: '✨';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            animation: sparkle 3s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { 
+                opacity: 0.5; 
+                transform: scale(1) rotate(0deg); 
+            }
+            50% { 
+                opacity: 1; 
+                transform: scale(1.3) rotate(180deg); 
+            }
+        }
+        
+        /* أزرار وردية أنثوية محسنة */
+        .btn-pink {
+            background: linear-gradient(135deg, #ec4899, #f472b6, #f9a8d4);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 16px 32px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+            position: relative;
+            overflow: hidden;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .btn-pink::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.6s;
+        }
+        
+        .btn-pink:hover::before {
+            left: 100%;
+        }
+        
+        .btn-pink:hover {
+            background: linear-gradient(135deg, #db2777, #ec4899, #f472b6);
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 12px 35px rgba(236, 72, 153, 0.4);
+        }
+        
+        /* حقول الإدخال الأنثوية */
+        .input-pink {
+            border: 3px solid #f9a8d4;
+            border-radius: 20px;
+            padding: 14px 20px;
+            transition: all 0.4s ease;
+            background: rgba(255, 255, 255, 0.95);
+            font-size: 16px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .input-pink:focus {
+            border-color: #ec4899;
+            box-shadow: 0 0 0 6px rgba(236, 72, 153, 0.15);
+            outline: none;
+            transform: scale(1.03);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        /* بطاقات الألوان والأرقام الأنثوية */
+        .color-card, .number-card {
+            background: linear-gradient(135deg, 
+                rgba(252, 231, 243, 0.9), 
+                rgba(251, 207, 232, 0.8));
+            border: 3px solid #f9a8d4;
+            border-radius: 25px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+        }
+        
+        .color-card::before, .number-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.5s ease;
+        }
+        
+        .color-card:hover::before, .number-card:hover::before {
+            transform: scale(1);
+        }
+        
+        .color-card:hover, .number-card:hover {
+            transform: translateY(-12px) scale(1.08);
+            border-color: #ec4899;
+            box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+        }
+        
+        /* تأثيرات الصوت البصرية المحسنة */
+        .sound-waves {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            margin-left: 10px;
+        }
+        
+        .sound-wave {
+            width: 4px;
+            background: linear-gradient(to top, #ec4899, #f472b6, #f9a8d4);
+            border-radius: 2px;
+            animation: soundWave 1.5s ease-in-out infinite;
+        }
+        
+        .sound-wave:nth-child(1) { height: 20px; animation-delay: 0s; }
+        .sound-wave:nth-child(2) { height: 30px; animation-delay: 0.1s; }
+        .sound-wave:nth-child(3) { height: 25px; animation-delay: 0.2s; }
+        .sound-wave:nth-child(4) { height: 35px; animation-delay: 0.3s; }
+        .sound-wave:nth-child(5) { height: 28px; animation-delay: 0.4s; }
+        .sound-wave:nth-child(6) { height: 22px; animation-delay: 0.5s; }
+        
+        @keyframes soundWave {
+            0%, 100% { 
+                transform: scaleY(1); 
+                opacity: 0.7; 
+            }
+            50% { 
+                transform: scaleY(0.3); 
+                opacity: 1; 
+            }
+        }
+        
+        /* أنيميشن النجاح الأنثوي */
+        .success-animation {
+            animation: successGlow 1s ease-in-out;
+        }
+        
+        @keyframes successGlow {
+            0% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 rgba(16, 185, 129, 0.4); 
+            }
+            25% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 20px rgba(16, 185, 129, 0.6); 
+                background-color: #dcfce7; 
+            }
+            50% { 
+                transform: scale(1.1); 
+                box-shadow: 0 0 30px rgba(16, 185, 129, 0.8); 
+                background-color: #bbf7d0; 
+            }
+            75% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 20px rgba(16, 185, 129, 0.6); 
+                background-color: #dcfce7; 
+            }
+            100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 rgba(16, 185, 129, 0.4); 
+            }
+        }
+        
+        /* أنيميشن الخطأ الأنثوي */
+        .error-animation {
+            animation: errorPulse 1s ease-in-out;
+        }
+        
+        @keyframes errorPulse {
+            0%, 100% { 
+                transform: translateX(0) scale(1); 
+                box-shadow: 0 0 0 rgba(220, 38, 38, 0.4); 
+            }
+            10% { 
+                transform: translateX(-10px) scale(1.02); 
+                box-shadow: 0 0 15px rgba(220, 38, 38, 0.6); 
+                background-color: #fef2f2; 
+            }
+            20% { 
+                transform: translateX(10px) scale(1.02); 
+                box-shadow: 0 0 15px rgba(220, 38, 38, 0.6); 
+                background-color: #fee2e2; 
+            }
+            30% { 
+                transform: translateX(-8px) scale(1.01); 
+                background-color: #fef2f2; 
+            }
+            40% { 
+                transform: translateX(8px) scale(1.01); 
+                background-color: #fee2e2; 
+            }
+            50% { 
+                transform: translateX(-6px) scale(1.01); 
+                background-color: #fef2f2; 
+            }
+            60% { 
+                transform: translateX(6px) scale(1.01); 
+                background-color: #fee2e2; 
+            }
+            70% { 
+                transform: translateX(-4px) scale(1); 
+                background-color: #fef2f2; 
+            }
+            80% { 
+                transform: translateX(4px) scale(1); 
+                background-color: #fee2e2; 
+            }
+            90% { 
+                transform: translateX(-2px) scale(1); 
+                background-color: #fef2f2; 
+            }
+        }
+        
+        /* شريط التقدم الأنثوي */
+        .progress-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 25px;
+            padding: 8px;
+            box-shadow: 0 8px 20px rgba(236, 72, 153, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, 
+                #ec4899, #f472b6, #f9a8d4, #fbcfe8, #fce7f3);
+            height: 12px;
+            border-radius: 20px;
+            transition: width 0.8s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+            animation: progressShine 2.5s infinite;
+        }
+        
+        @keyframes progressShine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        /* رقم النشاط الأنثوي */
+        .activity-number {
+            background: linear-gradient(135deg, #ec4899, #f472b6, #f9a8d4);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(236, 72, 153, 0.4);
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .activity-number::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ec4899, #f472b6, #f9a8d4, #fbcfe8);
+            z-index: -1;
+            animation: rotate 4s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* شارة الإكمال الأنثوية */
+        .completion-badge {
+            background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            animation: badgeGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes badgeGlow {
+            from { 
+                box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3); 
+            }
+            to { 
+                box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5); 
+            }
+        }
+        
+        /* تأثيرات خاصة للألوان */
+        .color-red { background: linear-gradient(135deg, #ef4444, #f87171); }
+        .color-blue { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
+        .color-green { background: linear-gradient(135deg, #10b981, #34d399); }
+        .color-yellow { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+        .color-purple { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+        .color-orange { background: linear-gradient(135deg, #f97316, #fb923c); }
+        .color-pink { background: linear-gradient(135deg, #ec4899, #f472b6); }
+        .color-brown { background: linear-gradient(135deg, #a3a3a3, #d4d4d4); }
+        .color-black { background: linear-gradient(135deg, #1f2937, #374151); }
+        .color-white { 
+            background: linear-gradient(135deg, #ffffff, #f9fafb); 
+            border: 2px solid #d1d5db; 
+        }
+        
+        /* تحسينات الاستجابة */
+        @media (max-width: 768px) {
+            .summary-card {
+                margin: 15px;
+                padding: 20px;
+            }
+            
+            .floating-heart, .floating-flower, .floating-butterfly {
+                font-size: 20px;
+            }
+            
+            .activity-number {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+        }
+        
+        /* تأثيرات إضافية للملخص */
+        .summary-section {
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.9), 
+                rgba(253, 242, 248, 0.8));
+            border: 2px solid #f9a8d4;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px 0;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        
+        .summary-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.2);
+        }
+        
+        .quiz-option {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quiz-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .quiz-option:hover::before {
+            left: 100%;
+        }
+        
+        .quiz-option:hover {
+            transform: scale(1.02);
+            border-color: #ec4899;
+        }
+        
+        /* تأثير الضوء المتحرك */
+        .light-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .light-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.4), 
+                transparent);
+            animation: lightMove 3s infinite;
+        }
+        
+        @keyframes lightMove {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- العلامة المائية المتحركة -->
+    <div class="watermark">© عائشة الحجيلي - ملخص الدرس الرابع - الألوان والأرقام - 1447هـ</div>
+    
+    <!-- المؤثرات البصرية العائمة الأنثوية -->
+    <div class="floating-elements">
+        <!-- قلوب عائمة -->
+        <div class="floating-heart" style="left: 5%; top: 15%; animation-delay: 0s;">💖</div>
+        <div class="floating-heart" style="left: 85%; top: 25%; animation-delay: 2s;">💕</div>
+        <div class="floating-heart" style="left: 25%; top: 65%; animation-delay: 4s;">💗</div>
+        <div class="floating-heart" style="left: 75%; top: 75%; animation-delay: 6s;">💝</div>
+        <div class="floating-heart" style="left: 45%; top: 10%; animation-delay: 8s;">💖</div>
+        
+        <!-- زهور عائمة -->
+        <div class="floating-flower" style="left: 15%; top: 35%; animation-delay: 1s;">🌸</div>
+        <div class="floating-flower" style="left: 70%; top: 20%; animation-delay: 3s;">🌺</div>
+        <div class="floating-flower" style="left: 30%; top: 80%; animation-delay: 5s;">🌷</div>
+        <div class="floating-flower" style="left: 80%; top: 60%; animation-delay: 7s;">🌹</div>
+        <div class="floating-flower" style="left: 40%; top: 45%; animation-delay: 9s;">🌻</div>
+        
+        <!-- فراشات عائمة -->
+        <div class="floating-butterfly" style="left: 20%; top: 25%; animation-delay: 1.5s;">🦋</div>
+        <div class="floating-butterfly" style="left: 60%; top: 15%; animation-delay: 3.5s;">🦋</div>
+        <div class="floating-butterfly" style="left: 35%; top: 70%; animation-delay: 5.5s;">🦋</div>
+        <div class="floating-butterfly" style="left: 75%; top: 85%; animation-delay: 7.5s;">🦋</div>
+        
+        <!-- نجوم عائمة -->
+        <div class="floating-star" style="left: 12%; top: 40%; animation-delay: 0.5s;">⭐</div>
+        <div class="floating-star" style="left: 88%; top: 30%; animation-delay: 2.5s;">✨</div>
+        <div class="floating-star" style="left: 22%; top: 70%; animation-delay: 4.5s;">🌟</div>
+        <div class="floating-star" style="left: 78%; top: 80%; animation-delay: 6.5s;">💫</div>
+        <div class="floating-star" style="left: 52%; top: 20%; animation-delay: 8.5s;">⭐</div>
+        <div class="floating-star" style="left: 32%; top: 50%; animation-delay: 10.5s;">✨</div>
+    </div>
+    
+    <!-- الهيدر الأنثوي -->
+    <header class="bg-white/90 backdrop-blur-md shadow-2xl border-b-4 border-pink-300 relative z-10">
+        <div class="container mx-auto px-6 py-10">
+            <div class="text-center">
+                <div class="flex justify-center items-center gap-8 mb-8">
+                    <div class="text-7xl animate-bounce">🌸</div>
+                    <h1 class="text-6xl font-bold bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 bg-clip-text text-transparent">
+                        ملخص الدرس الرابع
+                    </h1>
+                    <div class="text-7xl animate-bounce">🎀</div>
+                </div>
+                <h2 class="text-4xl font-bold text-pink-700 mb-4">الألوان والأرقام</h2>
+                <p class="text-3xl text-gray-700 mb-4 english-text font-semibold">Colors and Numbers Summary</p>
+                <p class="text-xl text-pink-600 mb-3">الصف السادس - الفصل الدراسي الأول - 1447هـ</p>
+                <p class="text-lg text-pink-500 mt-4 font-bold">إعداد: عائشة الحجيلي 🌹</p>
+                
+                <!-- شريط التقدم الأنثوي -->
+                <div class="mt-10 progress-container">
+                    <div class="bg-gray-200 rounded-full h-6 relative overflow-hidden">
+                        <div id="progressBar" class="progress-bar h-full rounded-full" style="width: 0%"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-sm font-bold text-gray-700">
+                            <span id="progressText">0 / 10 أنشطة مكتملة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- المحتوى الرئيسي -->
+    <main class="container mx-auto px-6 py-12 relative z-10">
+        
+        <!-- النشاط الأول: مراجعة الألوان الأساسية -->
+        <div class="summary-card p-12 mb-12" id="activity1">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">1</div>
+                <h2 class="text-4xl font-bold text-pink-700">🎨 مراجعة الألوان الأساسية</h2>
+                <div class="completion-badge hidden" id="badge1">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <h3 class="text-2xl font-bold text-pink-600 mb-6">🌈 الألوان التي تعلمناها:</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="color-card light-effect" onclick="playColorSound('red')">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full color-red shadow-xl"></div>
+                        <div class="text-xl font-bold text-pink-700 english-text mb-2">Red</div>
+                        <div class="text-lg text-gray-600 mb-3">أحمر</div>
+                        <button class="btn-pink text-sm px-6 py-3">
+                            🔊 استمع <div class="sound-waves hidden" id="waves-red">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="color-card light-effect" onclick="playColorSound('blue')">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full color-blue shadow-xl"></div>
+                        <div class="text-xl font-bold text-pink-700 english-text mb-2">Blue</div>
+                        <div class="text-lg text-gray-600 mb-3">أزرق</div>
+                        <button class="btn-pink text-sm px-6 py-3">
+                            🔊 استمع <div class="sound-waves hidden" id="waves-blue">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="color-card light-effect" onclick="playColorSound('green')">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full color-green shadow-xl"></div>
+                        <div class="text-xl font-bold text-pink-700 english-text mb-2">Green</div>
+                        <div class="text-lg text-gray-600 mb-3">أخضر</div>
+                        <button class="btn-pink text-sm px-6 py-3">
+                            🔊 استمع <div class="sound-waves hidden" id="waves-green">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="color-card light-effect" onclick="playColorSound('yellow')">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full color-yellow shadow-xl"></div>
+                        <div class="text-xl font-bold text-pink-700 english-text mb-2">Yellow</div>
+                        <div class="text-lg text-gray-600 mb-3">أصفر</div>
+                        <button class="btn-pink text-sm px-6 py-3">
+                            🔊 استمع <div class="sound-waves hidden" id="waves-yellow">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="color-card light-effect" onclick="playColorSound('purple')">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full color-purple shadow-xl"></div>
+                        <div class="text-xl font-bold text-pink-700 english-text mb-2">Purple</div>
+                        <div class="text-lg text-gray-600 mb-3">بنفسجي</div>
+                        <button class="btn-pink text-sm px-6 py-3">
+                            🔊 استمع <div class="sound-waves hidden" id="waves-purple">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="completeActivity(1)" class="btn-pink text-xl px-12 py-5">
+                    ✅ مراجعة مكتملة
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط الثاني: مراجعة الأرقام -->
+        <div class="summary-card p-12 mb-12" id="activity2">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">2</div>
+                <h2 class="text-4xl font-bold text-pink-700">🔢 مراجعة الأرقام 1-20</h2>
+                <div class="completion-badge hidden" id="badge2">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <h3 class="text-2xl font-bold text-pink-600 mb-6">📊 الأرقام المهمة:</h3>
+                <div class="grid grid-cols-5 md:grid-cols-10 gap-4">
+                    <div class="number-card light-effect" onclick="playNumberSound('one', 1)">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">1</div>
+                        <div class="text-lg font-bold text-pink-700 english-text mb-1">One</div>
+                        <div class="text-sm text-gray-600 mb-2">واحد</div>
+                        <button class="btn-pink text-xs px-3 py-1">
+                            🔊 <div class="sound-waves hidden" id="waves-one">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="number-card light-effect" onclick="playNumberSound('five', 5)">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">5</div>
+                        <div class="text-lg font-bold text-pink-700 english-text mb-1">Five</div>
+                        <div class="text-sm text-gray-600 mb-2">خمسة</div>
+                        <button class="btn-pink text-xs px-3 py-1">
+                            🔊 <div class="sound-waves hidden" id="waves-five">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="number-card light-effect" onclick="playNumberSound('ten', 10)">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">10</div>
+                        <div class="text-lg font-bold text-pink-700 english-text mb-1">Ten</div>
+                        <div class="text-sm text-gray-600 mb-2">عشرة</div>
+                        <button class="btn-pink text-xs px-3 py-1">
+                            🔊 <div class="sound-waves hidden" id="waves-ten">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="number-card light-effect" onclick="playNumberSound('fifteen', 15)">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">15</div>
+                        <div class="text-lg font-bold text-pink-700 english-text mb-1">Fifteen</div>
+                        <div class="text-sm text-gray-600 mb-2">خمسة عشر</div>
+                        <button class="btn-pink text-xs px-3 py-1">
+                            🔊 <div class="sound-waves hidden" id="waves-fifteen">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <div class="number-card light-effect" onclick="playNumberSound('twenty', 20)">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">20</div>
+                        <div class="text-lg font-bold text-pink-700 english-text mb-1">Twenty</div>
+                        <div class="text-sm text-gray-600 mb-2">عشرون</div>
+                        <button class="btn-pink text-xs px-3 py-1">
+                            🔊 <div class="sound-waves hidden" id="waves-twenty">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="completeActivity(2)" class="btn-pink text-xl px-12 py-5">
+                    ✅ مراجعة مكتملة
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط الثالث: اختبار سريع للألوان -->
+        <div class="summary-card p-12 mb-12" id="activity3">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">3</div>
+                <h2 class="text-4xl font-bold text-pink-700">🎯 اختبار سريع للألوان</h2>
+                <div class="completion-badge hidden" id="badge3">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">🌈 اختاري الإجابة الصحيحة:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">1. ما معنى كلمة "Green"؟</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q1', true)">
+                                أخضر
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q1', false)">
+                                أحمر
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q1', false)">
+                                أزرق
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q1', false)">
+                                أصفر
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">2. كيف نقول "وردي" بالإنجليزية؟</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q2', false)">
+                                Purple
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q2', true)">
+                                Pink
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q2', false)">
+                                Orange
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q2', false)">
+                                Brown
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkColorQuiz()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من الإجابات
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط الرابع: اختبار سريع للأرقام -->
+        <div class="summary-card p-12 mb-12" id="activity4">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">4</div>
+                <h2 class="text-4xl font-bold text-pink-700">🔢 اختبار سريع للأرقام</h2>
+                <div class="completion-badge hidden" id="badge4">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">📊 اختاري الإجابة الصحيحة:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">1. ما معنى "Seven"؟</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q3', false)">
+                                ستة
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q3', true)">
+                                سبعة
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q3', false)">
+                                ثمانية
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl" 
+                                    onclick="selectQuizOption(this, 'q3', false)">
+                                تسعة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">2. كيف نكتب "اثنا عشر" بالإنجليزية؟</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q4', false)">
+                                Eleven
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q4', true)">
+                                Twelve
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q4', false)">
+                                Thirteen
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'q4', false)">
+                                Twenty
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkNumberQuiz()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من الإجابات
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط الخامس: عد الأشياء -->
+        <div class="summary-card p-12 mb-12" id="activity5">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">5</div>
+                <h2 class="text-4xl font-bold text-pink-700">🧮 تطبيق العد</h2>
+                <div class="completion-badge hidden" id="badge5">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">🌸 عدي الأشياء واكتبي الرقم:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🌺🌺🌺🌺🌺🌺🌺</div>
+                            <p class="text-xl font-bold text-gray-700">كم زهرة تشاهدين؟</p>
+                        </div>
+                        <input type="text" class="input-pink w-48 english-text text-center mx-auto block" 
+                               id="count1" placeholder="اكتبي الرقم بالإنجليزية">
+                    </div>
+                    
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4">🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋</div>
+                            <p class="text-xl font-bold text-gray-700">كم فراشة تشاهدين؟</p>
+                        </div>
+                        <input type="text" class="input-pink w-48 english-text text-center mx-auto block" 
+                               id="count2" placeholder="اكتبي الرقم بالإنجليزية">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkCounting()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من العد
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط السادس: املأ الفراغات -->
+        <div class="summary-card p-12 mb-12" id="activity6">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">6</div>
+                <h2 class="text-4xl font-bold text-pink-700">✏️ املأ الفراغات</h2>
+                <div class="completion-badge hidden" id="badge6">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">📝 أكملي الجمل:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-xl mb-6 english-text">1. The sky is _______.</p>
+                        <div class="text-6xl mb-4 text-center">☁️</div>
+                        <p class="text-lg text-gray-600 mb-4">(السماء زرقاء)</p>
+                        <input type="text" class="input-pink w-48 english-text text-center mx-auto block" 
+                               id="fill1" placeholder="____">
+                    </div>
+                    
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-xl mb-6 english-text">2. I have _______ fingers.</p>
+                        <div class="text-6xl mb-4 text-center">✋</div>
+                        <p class="text-lg text-gray-600 mb-4">(لدي خمسة أصابع)</p>
+                        <input type="text" class="input-pink w-48 english-text text-center mx-auto block" 
+                               id="fill2" placeholder="____">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkFillBlanks()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من الإجابات
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط السابع: مطابقة الألوان والأرقام -->
+        <div class="summary-card p-12 mb-12" id="activity7">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">7</div>
+                <h2 class="text-4xl font-bold text-pink-700">🔗 مطابقة الألوان والأرقام</h2>
+                <div class="completion-badge hidden" id="badge7">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">🎯 اربطي كل كلمة بمعناها:</p>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-2xl font-bold text-pink-600 mb-6">الكلمات الإنجليزية:</h3>
+                        <div class="space-y-4">
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text cursor-pointer"
+                                 onclick="selectMatch(this, 'red')">
+                                Red
+                            </div>
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text cursor-pointer"
+                                 onclick="selectMatch(this, 'eight')">
+                                Eight
+                            </div>
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text cursor-pointer"
+                                 onclick="selectMatch(this, 'yellow')">
+                                Yellow
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-pink-600 mb-6">المعاني العربية:</h3>
+                        <div class="space-y-4">
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl cursor-pointer"
+                                 onclick="selectMatch(this, 'أصفر')">
+                                أصفر
+                            </div>
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl cursor-pointer"
+                                 onclick="selectMatch(this, 'أحمر')">
+                                أحمر
+                            </div>
+                            <div class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl cursor-pointer"
+                                 onclick="selectMatch(this, 'ثمانية')">
+                                ثمانية
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkMatching()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من المطابقة
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط الثامن: ترتيب الأرقام -->
+        <div class="summary-card p-12 mb-12" id="activity8">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">8</div>
+                <h2 class="text-4xl font-bold text-pink-700">📊 ترتيب الأرقام</h2>
+                <div class="completion-badge hidden" id="badge8">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">🔢 رتبي الأرقام من الأصغر إلى الأكبر:</p>
+                
+                <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                    <div class="grid grid-cols-5 gap-4 mb-8">
+                        <input type="number" class="input-pink text-center text-2xl font-bold" 
+                               id="order1" placeholder="?">
+                        <input type="number" class="input-pink text-center text-2xl font-bold" 
+                               id="order2" placeholder="?">
+                        <input type="number" class="input-pink text-center text-2xl font-bold" 
+                               id="order3" placeholder="?">
+                        <input type="number" class="input-pink text-center text-2xl font-bold" 
+                               id="order4" placeholder="?">
+                        <input type="number" class="input-pink text-center text-2xl font-bold" 
+                               id="order5" placeholder="?">
+                    </div>
+                    <p class="text-lg text-gray-600 text-center">رتبي هذه الأرقام: 9, 3, 15, 7, 12</p>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkOrdering()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من الترتيب
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط التاسع: كتابة الألوان والأرقام -->
+        <div class="summary-card p-12 mb-12" id="activity9">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">9</div>
+                <h2 class="text-4xl font-bold text-pink-700">✍️ كتابة الألوان والأرقام</h2>
+                <div class="completion-badge hidden" id="badge9">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">📝 اكتبي الكلمات بالإنجليزية:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 rounded-full color-green shadow-xl"></div>
+                                <p class="text-xl font-bold text-gray-700 mb-4">اكتبي اسم هذا اللون:</p>
+                                <input type="text" class="input-pink w-full english-text text-center" 
+                                       id="write1" placeholder="____">
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="text-8xl font-bold text-pink-600 mb-4">13</div>
+                                <p class="text-xl font-bold text-gray-700 mb-4">اكتبي هذا الرقم بالإنجليزية:</p>
+                                <input type="text" class="input-pink w-full english-text text-center" 
+                                       id="write2" placeholder="____">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkWriting()" class="btn-pink text-xl px-12 py-5">
+                    🔍 تحقق من الكتابة
+                </button>
+            </div>
+        </div>
+        
+        <!-- النشاط العاشر: التقييم الشامل -->
+        <div class="summary-card p-12 mb-12" id="activity10">
+            <div class="flex items-center gap-6 mb-10">
+                <div class="activity-number">10</div>
+                <h2 class="text-4xl font-bold text-pink-700">🏆 التقييم الشامل</h2>
+                <div class="completion-badge hidden" id="badge10">مكتمل ✓</div>
+            </div>
+            
+            <div class="summary-section">
+                <p class="text-2xl font-bold text-pink-600 mb-8">🌟 اختبار شامل للدرس:</p>
+                
+                <div class="space-y-8">
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">1. أكملي الجملة:</p>
+                        <p class="text-xl mb-6 english-text">The grass is _______ and I can count _______ flowers.</p>
+                        <div class="text-6xl mb-4 text-center">🌱🌸🌸🌸🌸🌸🌸</div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" class="input-pink english-text text-center" 
+                                   id="final1" placeholder="اللون">
+                            <input type="text" class="input-pink english-text text-center" 
+                                   id="final2" placeholder="الرقم">
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/80 p-8 rounded-2xl border-3 border-pink-200">
+                        <p class="text-2xl font-bold text-gray-700 mb-6">2. اختاري الإجابة الصحيحة:</p>
+                        <p class="text-xl mb-6">كيف نقول "ستة عشر" بالإنجليزية؟</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'final', false)">
+                                Fifteen
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'final', true)">
+                                Sixteen
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'final', false)">
+                                Seventeen
+                            </button>
+                            <button class="quiz-option p-4 bg-pink-50 border-3 border-pink-200 rounded-xl text-xl english-text" 
+                                    onclick="selectQuizOption(this, 'final', false)">
+                                Sixty
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="checkFinalAssessment()" class="btn-pink text-xl px-12 py-5">
+                    🏆 إنهاء التقييم الشامل
+                </button>
+            </div>
+        </div>
+        
+        <!-- نتائج الملخص -->
+        <div class="summary-card p-12 mb-12 hidden" id="summary-results">
+            <div class="text-center">
+                <div class="text-8xl mb-8">🎊</div>
+                <h2 class="text-5xl font-bold text-pink-700 mb-8">تهانينا! أكملت ملخص الدرس بنجاح!</h2>
+                
+                <div class="bg-gradient-to-r from-pink-50 to-pink-100 p-10 rounded-2xl border-3 border-pink-200 mb-10">
+                    <div class="grid md:grid-cols-3 gap-10 text-center">
+                        <div>
+                            <div class="text-5xl font-bold text-pink-600" id="total-score">0</div>
+                            <p class="text-2xl text-gray-700">النتيجة الإجمالية</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-pink-600" id="completed-activities">0</div>
+                            <p class="text-2xl text-gray-700">الأنشطة المكتملة</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-pink-600" id="performance-level">ممتاز</div>
+                            <p class="text-2xl text-gray-700">مستوى الأداء</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-pink-100 to-pink-50 p-10 rounded-2xl border-3 border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-700 mb-8">🌸 ملخص ما تعلمتيه:</h3>
+                    <div class="grid md:grid-cols-2 gap-8 text-right">
+                        <div class="space-y-4">
+                            <p class="text-xl text-gray-700">✅ مراجعة الألوان الأساسية</p>
+                            <p class="text-xl text-gray-700">✅ مراجعة الأرقام 1-20</p>
+                            <p class="text-xl text-gray-700">✅ اختبارات سريعة</p>
+                            <p class="text-xl text-gray-700">✅ تطبيق العد</p>
+                            <p class="text-xl text-gray-700">✅ املأ الفراغات</p>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-xl text-gray-700">✅ مطابقة الكلمات</p>
+                            <p class="text-xl text-gray-700">✅ ترتيب الأرقام</p>
+                            <p class="text-xl text-gray-700">✅ كتابة الكلمات</p>
+                            <p class="text-xl text-gray-700">✅ التقييم الشامل</p>
+                            <p class="text-xl text-gray-700">✅ النطق الصحيح</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="restartSummary()" class="btn-pink text-2xl px-12 py-6 mt-10">
+                    🔄 إعادة الملخص
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // متغيرات عامة
+        let completedActivities = 0;
+        let totalScore = 0;
+        let quizAnswers = {};
+        let matchingPairs = {};
+        let selectedMatch = null;
+        
+        // تشغيل صوت الألوان باستخدام Web Speech API
+        function playColorSound(color) {
+            const button = event.target;
+            const waves = document.getElementById(`waves-${color}`);
+            
+            if (waves) {
+                waves.classList.remove('hidden');
+                
+                // تشغيل الصوت باستخدام Web Speech API
+                if ('speechSynthesis' in window) {
+                    const utterance = new SpeechSynthesisUtterance(color);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 0.7;
+                    utterance.pitch = 1.1;
+                    utterance.volume = 1;
+                    
+                    utterance.onend = function() {
+                        waves.classList.add('hidden');
+                    };
+                    
+                    speechSynthesis.speak(utterance);
+                } else {
+                    // في حالة عدم دعم المتصفح
+                    setTimeout(() => {
+                        waves.classList.add('hidden');
+                        showSpeechBubble(button, `🔊 ${color}`);
+                    }, 2000);
+                }
+            }
+        }
+        
+        // تشغيل صوت الأرقام باستخدام Web Speech API
+        function playNumberSound(numberWord, numberDigit) {
+            const button = event.target;
+            const waves = document.getElementById(`waves-${numberWord}`);
+            
+            if (waves) {
+                waves.classList.remove('hidden');
+                
+                // تشغيل الصوت باستخدام Web Speech API
+                if ('speechSynthesis' in window) {
+                    const utterance = new SpeechSynthesisUtterance(numberWord);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 0.7;
+                    utterance.pitch = 1.1;
+                    utterance.volume = 1;
+                    
+                    utterance.onend = function() {
+                        waves.classList.add('hidden');
+                    };
+                    
+                    speechSynthesis.speak(utterance);
+                } else {
+                    // في حالة عدم دعم المتصفح
+                    setTimeout(() => {
+                        waves.classList.add('hidden');
+                        showSpeechBubble(button, `🔊 ${numberWord}`);
+                    }, 2000);
+                }
+            }
+        }
+        
+        // عرض فقاعة النطق
+        function showSpeechBubble(element, text) {
+            const bubble = document.createElement('div');
+            bubble.textContent = text;
+            bubble.style.cssText = `
+                position: absolute;
+                top: -70px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: linear-gradient(135deg, #ec4899, #f472b6);
+                color: white;
+                padding: 12px 18px;
+                border-radius: 25px;
+                font-size: 16px;
+                font-weight: bold;
+                white-space: nowrap;
+                z-index: 1000;
+                box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+                animation: speechBubbleShow 2.5s ease-in-out;
+            `;
+            
+            element.style.position = 'relative';
+            element.appendChild(bubble);
+            
+            setTimeout(() => {
+                if (bubble.parentNode) {
+                    bubble.remove();
+                }
+            }, 2500);
+        }
+        
+        // إكمال النشاط
+        function completeActivity(activityNum) {
+            const badge = document.getElementById(`badge${activityNum}`);
+            if (!badge.classList.contains('hidden')) {
+                return; // النشاط مكتمل مسبقاً
+            }
+            
+            badge.classList.remove('hidden');
+            completedActivities++;
+            totalScore += 10;
+            updateProgress();
+            
+            // تأثير بصري
+            const activity = document.getElementById(`activity${activityNum}`);
+            activity.classList.add('success-animation');
+            setTimeout(() => {
+                activity.classList.remove('success-animation');
+            }, 1000);
+            
+            // التحقق من إكمال جميع الأنشطة
+            if (completedActivities === 10) {
+                setTimeout(() => {
+                    showSummaryResults();
+                }, 1500);
+            }
+        }
+        
+        // تحديث شريط التقدم
+        function updateProgress() {
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+            const percentage = (completedActivities / 10) * 100;
+            
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = `${completedActivities} / 10 أنشطة مكتملة`;
+        }
+        
+        // اختيار إجابة الاختبار
+        function selectQuizOption(button, question, isCorrect) {
+            const siblings = button.parentElement.querySelectorAll('.quiz-option');
+            siblings.forEach(sib => {
+                sib.classList.remove('bg-pink-200', 'border-pink-500');
+                sib.classList.add('bg-pink-50', 'border-pink-200');
+            });
+            
+            button.classList.remove('bg-pink-50', 'border-pink-200');
+            button.classList.add('bg-pink-200', 'border-pink-500');
+            
+            quizAnswers[question] = isCorrect;
+        }
+        
+        // تحقق من اختبار الألوان
+        function checkColorQuiz() {
+            let correct = 0;
+            const totalQuestions = 2;
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                if (quizAnswers[`q${i}`] === true) {
+                    correct++;
+                }
+            }
+            
+            // تلوين الإجابات
+            document.querySelectorAll('#activity3 .quiz-option').forEach(button => {
+                if (button.classList.contains('bg-pink-200')) {
+                    const isCorrect = button.onclick.toString().includes('true');
+                    if (isCorrect) {
+                        button.style.backgroundColor = '#dcfce7';
+                        button.style.borderColor = '#16a34a';
+                        button.classList.add('success-animation');
+                    } else {
+                        button.style.backgroundColor = '#fef2f2';
+                        button.style.borderColor = '#dc2626';
+                        button.classList.add('error-animation');
+                    }
+                }
+            });
+            
+            if (correct === totalQuestions) {
+                totalScore += 15;
+                completeActivity(3);
+                setTimeout(() => {
+                    alert('🎉 ممتاز! جميع الإجابات صحيحة!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من ${totalQuestions} إجابات صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // تحقق من اختبار الأرقام
+        function checkNumberQuiz() {
+            let correct = 0;
+            const totalQuestions = 2;
+            
+            for (let i = 3; i <= 4; i++) {
+                if (quizAnswers[`q${i}`] === true) {
+                    correct++;
+                }
+            }
+            
+            // تلوين الإجابات
+            document.querySelectorAll('#activity4 .quiz-option').forEach(button => {
+                if (button.classList.contains('bg-pink-200')) {
+                    const isCorrect = button.onclick.toString().includes('true');
+                    if (isCorrect) {
+                        button.style.backgroundColor = '#dcfce7';
+                        button.style.borderColor = '#16a34a';
+                        button.classList.add('success-animation');
+                    } else {
+                        button.style.backgroundColor = '#fef2f2';
+                        button.style.borderColor = '#dc2626';
+                        button.classList.add('error-animation');
+                    }
+                }
+            });
+            
+            if (correct === totalQuestions) {
+                totalScore += 15;
+                completeActivity(4);
+                setTimeout(() => {
+                    alert('🎉 ممتاز! جميع الإجابات صحيحة!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من ${totalQuestions} إجابات صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // تحقق من العد
+        function checkCounting() {
+            const answers = ['seven', 'twelve'];
+            let correct = 0;
+            
+            answers.forEach((answer, index) => {
+                const input = document.getElementById(`count${index + 1}`);
+                if (input.value.toLowerCase().trim() === answer) {
+                    input.classList.add('success-animation');
+                    input.style.backgroundColor = '#dcfce7';
+                    input.style.borderColor = '#16a34a';
+                    correct++;
+                } else {
+                    input.classList.add('error-animation');
+                    input.style.backgroundColor = '#fef2f2';
+                    input.style.borderColor = '#dc2626';
+                }
+            });
+            
+            if (correct === 2) {
+                totalScore += 15;
+                completeActivity(5);
+                setTimeout(() => {
+                    alert('🎉 رائع! جميع الأعداد صحيحة!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من 2 إجابات صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // تحقق من املأ الفراغات
+        function checkFillBlanks() {
+            const answers = ['blue', 'five'];
+            let correct = 0;
+            
+            answers.forEach((answer, index) => {
+                const input = document.getElementById(`fill${index + 1}`);
+                if (input.value.toLowerCase().trim() === answer) {
+                    input.classList.add('success-animation');
+                    input.style.backgroundColor = '#dcfce7';
+                    input.style.borderColor = '#16a34a';
+                    correct++;
+                } else {
+                    input.classList.add('error-animation');
+                    input.style.backgroundColor = '#fef2f2';
+                    input.style.borderColor = '#dc2626';
+                }
+            });
+            
+            if (correct === 2) {
+                totalScore += 15;
+                completeActivity(6);
+                setTimeout(() => {
+                    alert('🎉 رائع! جميع الفراغات مملوءة بشكل صحيح!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من 2 إجابات صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // اختيار المطابقة
+        function selectMatch(element, value) {
+            if (selectedMatch) {
+                selectedMatch.classList.remove('bg-pink-200', 'border-pink-500');
+                selectedMatch.classList.add('bg-pink-50', 'border-pink-200');
+            }
+            
+            element.classList.remove('bg-pink-50', 'border-pink-200');
+            element.classList.add('bg-pink-200', 'border-pink-500');
+            selectedMatch = element;
+            
+            // حفظ المطابقة
+            const pairs = {
+                'red': 'أحمر',
+                'eight': 'ثمانية',
+                'yellow': 'أصفر',
+                'أحمر': 'red',
+                'ثمانية': 'eight',
+                'أصفر': 'yellow'
+            };
+            
+            matchingPairs[value] = true;
+        }
+        
+        // تحقق من المطابقة
+        function checkMatching() {
+            const correctPairs = ['red', 'eight', 'yellow', 'أحمر', 'ثمانية', 'أصفر'];
+            let correct = 0;
+            
+            correctPairs.forEach(pair => {
+                if (matchingPairs[pair]) {
+                    correct++;
+                }
+            });
+            
+            if (correct >= 6) {
+                totalScore += 15;
+                completeActivity(7);
+                setTimeout(() => {
+                    alert('🎉 ممتاز! جميع المطابقات صحيحة!');
+                }, 1000);
+            } else {
+                alert('❌ المطابقة غير مكتملة. حاولي مرة أخرى!');
+            }
+        }
+        
+        // تحقق من الترتيب
+        function checkOrdering() {
+            const expectedOrder = [3, 7, 9, 12, 15];
+            let correct = 0;
+            
+            expectedOrder.forEach((expected, index) => {
+                const input = document.getElementById(`order${index + 1}`);
+                if (parseInt(input.value) === expected) {
+                    input.classList.add('success-animation');
+                    input.style.backgroundColor = '#dcfce7';
+                    input.style.borderColor = '#16a34a';
+                    correct++;
+                } else {
+                    input.classList.add('error-animation');
+                    input.style.backgroundColor = '#fef2f2';
+                    input.style.borderColor = '#dc2626';
+                }
+            });
+            
+            if (correct === 5) {
+                totalScore += 15;
+                completeActivity(8);
+                setTimeout(() => {
+                    alert('🎉 ممتاز! الأرقام مرتبة بشكل صحيح!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من 5 أرقام صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // تحقق من الكتابة
+        function checkWriting() {
+            const answers = ['green', 'thirteen'];
+            let correct = 0;
+            
+            answers.forEach((answer, index) => {
+                const input = document.getElementById(`write${index + 1}`);
+                if (input.value.toLowerCase().trim() === answer) {
+                    input.classList.add('success-animation');
+                    input.style.backgroundColor = '#dcfce7';
+                    input.style.borderColor = '#16a34a';
+                    correct++;
+                } else {
+                    input.classList.add('error-animation');
+                    input.style.backgroundColor = '#fef2f2';
+                    input.style.borderColor = '#dc2626';
+                }
+            });
+            
+            if (correct === 2) {
+                totalScore += 15;
+                completeActivity(9);
+                setTimeout(() => {
+                    alert('🎉 رائع! الكتابة صحيحة!');
+                }, 1000);
+            } else {
+                alert(`✅ ${correct} من 2 إجابات صحيحة. حاولي مرة أخرى!`);
+            }
+        }
+        
+        // تحقق من التقييم النهائي
+        function checkFinalAssessment() {
+            let score = 0;
+            
+            // تحقق من الجملة
+            const input1 = document.getElementById('final1');
+            const input2 = document.getElementById('final2');
+            
+            if (input1.value.toLowerCase().trim() === 'green') {
+                score += 10;
+                input1.style.backgroundColor = '#dcfce7';
+                input1.style.borderColor = '#16a34a';
+            }
+            
+            if (input2.value.toLowerCase().trim() === 'six') {
+                score += 10;
+                input2.style.backgroundColor = '#dcfce7';
+                input2.style.borderColor = '#16a34a';
+            }
+            
+            // تحقق من سؤال الاختيار
+            if (quizAnswers['final'] === true) {
+                score += 10;
+            }
+            
+            totalScore += score;
+            completeActivity(10);
+            
+            setTimeout(() => {
+                alert(`🎉 أكملت التقييم الشامل! حصلت على ${score} من 30 نقطة!`);
+            }, 1000);
+        }
+        
+        // عرض نتائج الملخص
+        function showSummaryResults() {
+            const resultsDiv = document.getElementById('summary-results');
+            resultsDiv.classList.remove('hidden');
+            
+            document.getElementById('total-score').textContent = totalScore + '%';
+            document.getElementById('completed-activities').textContent = completedActivities + '/10';
+            
+            let performanceLevel = '';
+            if (totalScore >= 90) {
+                performanceLevel = 'ممتاز';
+                document.getElementById('performance-level').className = 'text-5xl font-bold text-green-600';
+            } else if (totalScore >= 75) {
+                performanceLevel = 'جيد جداً';
+                document.getElementById('performance-level').className = 'text-5xl font-bold text-blue-600';
+            } else if (totalScore >= 60) {
+                performanceLevel = 'جيد';
+                document.getElementById('performance-level').className = 'text-5xl font-bold text-yellow-600';
+            } else {
+                performanceLevel = 'يحتاج تحسين';
+                document.getElementById('performance-level').className = 'text-5xl font-bold text-red-600';
+            }
+            
+            document.getElementById('performance-level').textContent = performanceLevel;
+            
+            // التمرير إلى النتائج
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // إعادة تشغيل الملخص
+        function restartSummary() {
+            location.reload();
+        }
+        
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            // إضافة تأثيرات إضافية عند التحميل
+            setTimeout(() => {
+                document.querySelectorAll('.summary-card').forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(50px)';
+                        card.style.transition = 'all 0.6s ease';
+                        
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    }, index * 200);
+                });
+            }, 500);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96af2a3b448af9a3',t:'MTc1NDQ4OTkyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
